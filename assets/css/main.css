@@ -3509,12 +3509,289 @@ input, select, textarea {
 				padding: 2em 1em 2em 1em ;
 			}
 
-
-
 	}
+	
 
-	input[type="number"],
-    input[type="tel"] {
-    width: 100%;
-    box-sizing: border-box;
+	/* ===========================
+   TechTrack Academy Theme
+=========================== */
+
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+body{
+    font-family:'Poppins',sans-serif;
+    background:#ffffff;
+    scroll-behavior:smooth;
+}
+/* ==========================
+   Navigation
+========================== */
+
+#nav{
+    position:fixed;
+    top:20px;
+    left:50%;
+    transform:translateX(-50%);
+    z-index:9999;
+
+    background:rgba(255,255,255,.15);
+    backdrop-filter:blur(15px);
+
+    padding:15px 35px;
+
+    border-radius:50px;
+
+    box-shadow:0 8px 30px rgba(0,0,0,.15);
+}
+
+#nav ul{
+    display:flex;
+    gap:30px;
+    list-style:none;
+    margin:0;
+}
+
+#nav a{
+    color:#6D28D9;
+    text-decoration:none;
+    font-weight:600;
+    transition:.3s;
+	
+}
+
+#nav a:hover{
+    color:#ffffff;
+}
+
+/* Header */
+
+#header{
+    background:linear-gradient(135deg,#5B21B6,#8B5CF6,#ffffff);
+    background-size:300% 300%;
+    animation:gradientMove 8s ease infinite;
+}
+
+@keyframes gradientMove{
+
+0%{
+background-position:0% 50%;
+}
+
+50%{
+background-position:100% 50%;
+}
+
+100%{
+background-position:0% 50%;
+}
+
+}
+
+#header h1{
+    animation:slideDown 1s ease;
+}
+
+#header p{
+    animation:fadeUp 1.5s ease;
+}
+
+@keyframes slideDown{
+
+from{
+opacity:0;
+transform:translateY(-40px);
+}
+
+to{
+opacity:1;
+transform:translateY(0);
+}
+
+}
+
+@keyframes fadeUp{
+
+from{
+opacity:0;
+transform:translateY(40px);
+}
+
+to{
+opacity:1;
+transform:translateY(0);
+}
+
+}
+
+/* Buttons */
+
+.button{
+    border-radius:40px !important;
+    background:#6D28D9 !important;
+    color:white !important;
+    transition:.4s;
+    box-shadow:0 10px 25px rgba(109,40,217,.25);
+}
+
+.button:hover{
+
+transform:translateY(-6px);
+background:#8B5CF6 !important;
+box-shadow:0 20px 35px rgba(109,40,217,.4);
+
+}
+
+/* Images */
+
+.image img{
+
+border-radius:20px;
+transition:.5s;
+
+}
+
+.image img:hover{
+
+transform:scale(1.05);
+box-shadow:0 20px 40px rgba(0,0,0,.15);
+
+}
+
+/* Cards */
+
+.course-card{
+    background:#fff;
+    border-radius:20px;
+    padding:25px;
+    height:100%;
+    text-align:center;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+    transition:.3s;
+}
+
+.course-card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 20px 40px rgba(91,33,182,.2);
+}
+
+.course-card img{
+    border-radius:15px;
+    margin-bottom:20px;
+}
+
+.course-card h3{
+    color:#5B21B6;
+}
+
+.course-card p{
+    color:#555;
+    line-height:1.7;
+    min-height:100px;
+}
+
+.course-card .actions{
+    margin-top:20px;
+}
+
+/* Sections */
+
+.main.style1{
+background:#ffffff;
+}
+.main.style2{
+background:#F6F1FF !important;
+}
+.main.style1 h2,
+.main.style1 h3{
+color:#6D28D9 !important;
+}
+.main.style2 h2,
+.main.style2 h3{
+color:#6D28D9 !important;
+}
+
+/* Paragraphs */
+.main.style1 p,
+.main.style2 p {
+    color: #555 !important;
+}
+/* Icons */
+
+.icon.major{
+
+transition:.5s;
+color:#6D28D9;
+
+}
+
+.icon.major:hover{
+
+transform:rotate(12deg) scale(1.15);
+color:#A855F7;
+
+}
+
+/* Form */
+
+input,
+textarea,
+select{
+
+border-radius:15px !important;
+transition:.3s;
+
+}
+
+input:focus,
+textarea:focus,
+select:focus{
+
+border-color:#7C3AED !important;
+box-shadow:0 0 20px rgba(124,58,237,.25);
+
+}
+
+/* Footer */
+
+#footer{
+
+background:#2E1065;
+color:white;
+
+}
+
+#footer a{
+
+color:white;
+
+}
+
+#footer a:hover{
+
+color:#C084FC;
+
+}
+/* ===== Remove underline from navbar ===== */
+
+#nav ul{
+    padding:0;
+    margin:0;
+    list-style:none;
+}
+
+#nav li{
+    list-style:none;
+}
+
+#nav a{
+    color:#6D28D9 !important;
+    text-decoration:none !important;
+    border-bottom:none !important;
+    box-shadow:none !important;
+}
+
+#nav a:hover{
+    color:#ffffff !important;
+    border-bottom:none !important;
 }
