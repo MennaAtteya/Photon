@@ -3509,4 +3509,12 @@ input, select, textarea {
 				padding: 2em 1em 2em 1em ;
 			}
 
+
+
 	}
+
+	input[type="number"],
+    input[type="tel"] {
+    width: 100%;
+    box-sizing: border-box;
+}
